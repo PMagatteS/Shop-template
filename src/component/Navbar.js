@@ -5,7 +5,7 @@ import { AiOutlineShoppingCart } from "react-icons/ai";
 const Navbar = ({ func, showCart, cartQuantity }) => {
   return (
     <div className="navbar">
-      <Searchbar function={func}></Searchbar>
+      <Searchbar func={func}></Searchbar>
       <div
         className="cart-icon"
         onClick={showCart}

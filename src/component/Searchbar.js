@@ -1,10 +1,10 @@
 import React from "react";
 
-const Searchbar = (props) => {
+const Searchbar = ({ func }) => {
   const [searchValue, setsearchValue] = React.useState("");
   const search = (e) => {
     e.preventDefault();
-    props.function(searchValue);
+    func(searchValue);
   };
 
   return (
